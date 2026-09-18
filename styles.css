@@ -695,15 +695,17 @@ h3 {
 }
 
 .discipline-row svg {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
 
   fill: none;
   stroke: var(--ritmavo-teal);
 
-  stroke-width: 1.45;
+  stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+
+  flex: 0 0 22px;
 }
 
 
