@@ -3811,3 +3811,982 @@ button:focus-visible {
   }
 
 }
+
+
+/* =========================================================
+   FOR WHO PAGE
+   Scoped styles — existing pages remain untouched
+   ========================================================= */
+
+.for-who-page {
+  background: var(--ritmavo-bg);
+}
+
+
+/* HERO */
+
+.for-who-page .for-who-hero {
+  min-height: 620px;
+
+  padding: 84px 0 72px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 73% 45%,
+      rgba(18, 184, 179, 0.12),
+      transparent 31%
+    ),
+    var(--ritmavo-bg);
+
+  color: var(--ritmavo-text-light);
+}
+
+
+.for-who-page .for-who-hero-grid {
+  min-height: 460px;
+
+  display: grid;
+  grid-template-columns: 43% 50%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.for-who-page .for-who-hero-copy h1 {
+  color: var(--ritmavo-text-light);
+
+  font-size: clamp(4rem, 5.8vw, 5.7rem);
+}
+
+
+.for-who-page .for-who-hero-copy h1 em {
+  color: var(--ritmavo-teal);
+
+  font-style: normal;
+}
+
+
+.for-who-page .for-who-hero-lead {
+  max-width: 520px;
+
+  margin: 26px 0 0;
+
+  color: var(--ritmavo-muted-light);
+
+  line-height: 1.7;
+}
+
+
+.for-who-page .for-who-role-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin: 27px 0 31px;
+}
+
+
+.for-who-page .for-who-role-tags span {
+  padding: 7px 11px;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  color: #d9e7e5;
+
+  font-size: 0.69rem;
+  font-weight: 700;
+}
+
+
+/* HERO ROLE MAP */
+
+.for-who-page .for-who-hero-visual {
+  position: relative;
+
+  min-height: 460px;
+}
+
+
+.for-who-page .for-who-hero-visual::before,
+.for-who-page .for-who-hero-visual::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  border: 1px solid rgba(18, 184, 179, 0.18);
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+
+.for-who-page .for-who-hero-visual::before {
+  width: 365px;
+  height: 365px;
+}
+
+
+.for-who-page .for-who-hero-visual::after {
+  width: 245px;
+  height: 245px;
+}
+
+
+.for-who-page .for-who-core {
+  position: absolute;
+  z-index: 5;
+
+  left: 50%;
+  top: 50%;
+
+  width: 138px;
+  height: 138px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(18, 184, 179, 0.38);
+  border-radius: 50%;
+
+  background: var(--ritmavo-bg-soft);
+
+  box-shadow:
+    0 0 60px rgba(18, 184, 179, 0.12);
+}
+
+
+.for-who-page .for-who-core img {
+  width: 45px;
+  height: 45px;
+
+  object-fit: contain;
+}
+
+
+.for-who-page .for-who-core strong {
+  font-family: Manrope, sans-serif;
+  font-size: 0.85rem;
+}
+
+
+.for-who-page .for-who-role-circle {
+  position: absolute;
+  z-index: 6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+
+  background: rgba(6, 25, 30, 0.95);
+
+  color: var(--ritmavo-text-light);
+
+  font-family: Manrope, sans-serif;
+  font-size: 0.73rem;
+  font-weight: 800;
+}
+
+
+.for-who-page .role-athlete {
+  width: 125px;
+  height: 125px;
+
+  left: 50%;
+  top: 3%;
+
+  transform: translateX(-50%);
+}
+
+
+.for-who-page .role-pt {
+  width: 105px;
+  height: 105px;
+
+  left: 5%;
+  bottom: 12%;
+}
+
+
+.for-who-page .role-nutrition {
+  width: 125px;
+  height: 125px;
+
+  right: 2%;
+  bottom: 11%;
+}
+
+
+/* PRINCIPLE */
+
+.for-who-page .for-who-principle {
+  padding: 78px 0 66px;
+
+  background: var(--ritmavo-bg-soft);
+
+  color: var(--ritmavo-text-light);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.for-who-page .for-who-principle-grid {
+  display: grid;
+  grid-template-columns: 44% 44%;
+
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+
+.for-who-page .for-who-big-copy {
+  margin: 0;
+
+  color: var(--ritmavo-text-light);
+
+  font-family: Manrope, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+.for-who-page .for-who-muted-copy {
+  margin: 22px 0 0;
+
+  color: var(--ritmavo-muted-light);
+
+  line-height: 1.7;
+}
+
+
+.for-who-page .for-who-flow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+
+  align-items: center;
+
+  margin-top: 55px;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.for-who-page .for-who-flow div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.for-who-page .for-who-flow b {
+  color: var(--ritmavo-coral);
+
+  font-size: 0.62rem;
+}
+
+
+.for-who-page .for-who-flow span {
+  font-family: Manrope, sans-serif;
+  font-size: 0.93rem;
+  font-weight: 700;
+}
+
+
+.for-who-page .for-who-flow i {
+  padding: 0 16px;
+
+  color: var(--ritmavo-coral);
+
+  font-style: normal;
+}
+
+
+/* COMMON SECTION HEAD */
+
+.for-who-page .for-who-section-head {
+  display: grid;
+  grid-template-columns: 55% 35%;
+
+  justify-content: space-between;
+  align-items: end;
+
+  gap: 40px;
+
+  margin-bottom: 42px;
+}
+
+
+.for-who-page .for-who-section-head > p {
+  margin: 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  line-height: 1.65;
+}
+
+
+/* ROLE CARDS */
+
+.for-who-page .for-who-roles {
+  padding: 80px 0;
+
+  background: var(--ritmavo-ice);
+}
+
+
+.for-who-page .for-who-role-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 16px;
+}
+
+
+.for-who-page .for-who-role-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(10, 32, 37, 0.14);
+
+  background: rgba(255, 255, 255, 0.28);
+}
+
+
+.for-who-page .for-who-role-card-large {
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: 38% 62%;
+
+  min-height: 430px;
+}
+
+
+.for-who-page .for-who-role-card:not(.for-who-role-card-large) {
+  display: grid;
+  grid-template-rows: 255px auto;
+}
+
+
+.for-who-page .for-who-role-copy {
+  position: relative;
+
+  padding: 30px;
+}
+
+
+.for-who-page .for-who-role-number {
+  position: absolute;
+
+  top: 28px;
+  right: 28px;
+
+  color: var(--ritmavo-coral);
+
+  font-size: 0.63rem;
+  font-weight: 800;
+}
+
+
+.for-who-page .for-who-role-copy h3 {
+  margin: 10px 0 14px;
+
+  font-size: 1.75rem;
+}
+
+
+.for-who-page .for-who-role-copy > p:not(.eyebrow) {
+  margin: 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  line-height: 1.65;
+}
+
+
+.for-who-page .for-who-role-image {
+  overflow: hidden;
+
+  background: var(--ritmavo-bg);
+}
+
+
+.for-who-page .for-who-role-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.for-who-page .athlete-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px;
+
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(18, 184, 179, 0.08),
+      transparent 52%
+    ),
+    var(--ritmavo-bg);
+}
+
+
+.for-who-page .athlete-image img {
+  width: 100%;
+  height: auto;
+
+  max-height: 385px;
+
+  object-fit: contain;
+}
+
+
+.for-who-page .for-who-feature-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin: 25px 0 27px;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.for-who-page .for-who-feature-list li {
+  padding: 7px 10px;
+
+  border: 1px solid rgba(10, 32, 37, 0.14);
+  border-radius: 999px;
+
+  font-size: 0.67rem;
+  font-weight: 700;
+}
+
+
+/* ATHLETE FOCUS */
+
+.for-who-page .for-who-athlete {
+  padding: 80px 0;
+
+  background: var(--ritmavo-paper);
+}
+
+
+.for-who-page .for-who-athlete-grid {
+  display: grid;
+  grid-template-columns: 38% 56%;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 60px;
+}
+
+
+.for-who-page .for-who-athlete-grid > div:first-child > p:not(.eyebrow) {
+  margin: 22px 0 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  line-height: 1.7;
+}
+
+
+.for-who-page .for-who-athlete-device {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.for-who-page .for-who-athlete-device img {
+  width: min(100%, 760px);
+
+  object-fit: contain;
+}
+
+
+.for-who-page .for-who-mini-features {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 27px;
+}
+
+
+.for-who-page .for-who-mini-features span {
+  padding: 8px 11px;
+
+  border: 1px solid rgba(10, 32, 37, 0.14);
+  border-radius: 999px;
+
+  font-size: 0.69rem;
+  font-weight: 700;
+}
+
+
+/* PROFESSIONAL CONNECTION */
+
+.for-who-page .for-who-professional-connection {
+  padding: 82px 0;
+
+  background: var(--ritmavo-bg);
+
+  color: var(--ritmavo-text-light);
+}
+
+
+.for-who-page .for-who-professional-grid {
+  display: grid;
+  grid-template-columns: 39% 53%;
+
+  justify-content: space-between;
+
+  gap: 70px;
+}
+
+
+.for-who-page .for-who-professional-grid > div:first-child > p:not(.eyebrow) {
+  margin: 23px 0 0;
+
+  color: var(--ritmavo-muted-light);
+
+  line-height: 1.7;
+}
+
+
+.for-who-page .for-who-professional-flow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+
+  align-items: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.for-who-page .for-who-professional-flow > div {
+  min-height: 145px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 20px;
+}
+
+
+.for-who-page .for-who-professional-flow span {
+  color: var(--ritmavo-teal);
+
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+
+.for-who-page .for-who-professional-flow strong {
+  font-family: Manrope, sans-serif;
+  font-size: 1rem;
+}
+
+
+.for-who-page .for-who-professional-flow i {
+  color: var(--ritmavo-coral);
+
+  font-style: normal;
+}
+
+
+/* SHARED */
+
+.for-who-page .for-who-shared {
+  padding: 80px 0;
+
+  background: var(--ritmavo-ice);
+}
+
+
+.for-who-page .for-who-shared-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  border-top: 1px solid var(--line-light);
+  border-bottom: 1px solid var(--line-light);
+}
+
+
+.for-who-page .for-who-shared-grid > div {
+  min-height: 190px;
+
+  padding: 25px 20px;
+
+  border-left: 1px solid var(--line-light);
+}
+
+
+.for-who-page .for-who-shared-grid > div:first-child {
+  border-left: 0;
+}
+
+
+.for-who-page .for-who-shared-grid span {
+  color: var(--ritmavo-coral);
+
+  font-size: 0.62rem;
+  font-weight: 800;
+}
+
+
+.for-who-page .for-who-shared-grid strong {
+  display: block;
+
+  margin: 18px 0 10px;
+
+  font-family: Manrope, sans-serif;
+  font-size: 0.96rem;
+}
+
+
+.for-who-page .for-who-shared-grid p {
+  margin: 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
+
+/* CHOOSE */
+
+.for-who-page .for-who-choose {
+  padding: 80px 0;
+
+  background: var(--ritmavo-paper);
+}
+
+
+.for-who-page .for-who-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 14px;
+}
+
+
+.for-who-page .for-who-choice-card {
+  position: relative;
+
+  min-height: 285px;
+
+  padding: 29px;
+
+  border: 1px solid rgba(10, 32, 37, 0.14);
+
+  background: rgba(255, 255, 255, 0.3);
+
+  transition:
+    background-color 0.28s ease,
+    color 0.28s ease,
+    border-color 0.28s ease,
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+
+.for-who-page .for-who-choice-card:hover {
+  background: var(--ritmavo-bg);
+
+  color: var(--ritmavo-text-light);
+
+  border-color: rgba(18, 184, 179, 0.38);
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, 0.14);
+}
+
+
+.for-who-page .for-who-choice-card > span {
+  position: absolute;
+
+  top: 28px;
+  right: 28px;
+
+  color: var(--ritmavo-coral);
+
+  font-size: 0.62rem;
+  font-weight: 800;
+}
+
+
+.for-who-page .for-who-choice-card h3 {
+  margin: 13px 0;
+
+  font-size: 1.5rem;
+}
+
+
+.for-who-page .for-who-choice-card > p:not(.eyebrow) {
+  margin: 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  font-size: 0.82rem;
+  line-height: 1.65;
+
+  transition: color 0.28s ease;
+}
+
+
+.for-who-page .for-who-choice-card:hover > p:not(.eyebrow) {
+  color: var(--ritmavo-muted-light);
+}
+
+
+.for-who-page .for-who-choice-card strong {
+  position: absolute;
+
+  left: 29px;
+  bottom: 27px;
+
+  font-size: 0.7rem;
+}
+
+
+/* STATUS */
+
+.for-who-page .for-who-status {
+  padding: 74px 0;
+
+  background: var(--ritmavo-ice);
+}
+
+
+.for-who-page .for-who-status-grid {
+  display: grid;
+  grid-template-columns: 46% 43%;
+
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+
+.for-who-page .for-who-status-grid > div:last-child > p {
+  margin: 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  line-height: 1.7;
+}
+
+
+.for-who-page .for-who-status dl {
+  display: grid;
+  grid-template-columns: 38% 62%;
+
+  margin: 30px 0 0;
+
+  border-top: 1px solid var(--line-light);
+
+  font-size: 0.72rem;
+}
+
+
+.for-who-page .for-who-status dt,
+.for-who-page .for-who-status dd {
+  margin: 0;
+
+  padding: 10px 0;
+
+  border-bottom: 1px solid var(--line-light);
+}
+
+
+.for-who-page .for-who-status dt {
+  font-weight: 800;
+}
+
+
+.for-who-page .for-who-status dd {
+  color: #415c5e;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .for-who-page .for-who-role-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .for-who-page .for-who-role-card-large {
+    grid-column: auto;
+  }
+
+  .for-who-page .for-who-shared-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .for-who-page .for-who-shared-grid > div:nth-child(4) {
+    border-left: 0;
+  }
+
+}
+
+
+@media (max-width: 720px) {
+
+  .for-who-page .for-who-hero {
+    padding: 55px 0 45px;
+  }
+
+  .for-who-page .for-who-hero-grid,
+  .for-who-page .for-who-principle-grid,
+  .for-who-page .for-who-athlete-grid,
+  .for-who-page .for-who-professional-grid,
+  .for-who-page .for-who-status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .for-who-page .for-who-hero-visual {
+    min-height: 430px;
+
+    margin-top: 35px;
+
+    transform: scale(0.85);
+  }
+
+  .for-who-page .for-who-flow {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .for-who-page .for-who-flow i {
+    display: none;
+  }
+
+  .for-who-page .for-who-flow div {
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  }
+
+  .for-who-page .for-who-section-head {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .for-who-page .for-who-role-card-large {
+    grid-template-columns: 1fr;
+  }
+
+  .for-who-page .athlete-image {
+    min-height: 330px;
+  }
+
+  .for-who-page .for-who-professional-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .for-who-page .for-who-professional-flow i {
+    display: none;
+  }
+
+  .for-who-page .for-who-professional-flow > div {
+    min-height: 95px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  }
+
+  .for-who-page .for-who-shared-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .for-who-page .for-who-shared-grid > div {
+    border-left: 0;
+    border-bottom: 1px solid var(--line-light);
+  }
+
+  .for-who-page .for-who-shared-grid > div:nth-child(odd) {
+    border-right: 1px solid var(--line-light);
+  }
+
+  .for-who-page .for-who-choose-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 430px) {
+
+  .for-who-page .for-who-hero-copy h1 {
+    font-size: 3rem;
+  }
+
+  .for-who-page .for-who-hero-visual {
+    margin-left: -45px;
+    margin-right: -45px;
+
+    transform: scale(0.72);
+  }
+
+  .for-who-page .for-who-role-card:not(.for-who-role-card-large) {
+    grid-template-rows: 230px auto;
+  }
+
+  .for-who-page .for-who-shared-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .for-who-page .for-who-shared-grid > div:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .for-who-page .for-who-status dl {
+    grid-template-columns: 1fr;
+  }
+
+}
