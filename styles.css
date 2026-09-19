@@ -4790,3 +4790,901 @@ button:focus-visible {
   }
 
 }
+
+
+/* =========================================================
+   FOR WHO PAGE V2
+   Sportivo / PT / Nutrizionista / Ecosistema
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   ROLE BASE
+   --------------------------------------------------------- */
+
+.for-who-page .audience-role {
+  padding: 84px 0;
+}
+
+
+.for-who-page .audience-athlete {
+  background: var(--ritmavo-ice);
+}
+
+
+.for-who-page .audience-pt {
+  background: var(--ritmavo-bg);
+
+  color: var(--ritmavo-text-light);
+}
+
+
+.for-who-page .audience-nutritionist {
+  background: var(--ritmavo-paper);
+}
+
+
+.for-who-page .audience-role-heading {
+  display: grid;
+  grid-template-columns: 52% 39%;
+
+  justify-content: space-between;
+
+  gap: 60px;
+
+  margin-bottom: 45px;
+}
+
+
+.for-who-page .audience-role-heading > div:last-child p {
+  margin: 0 0 15px;
+
+  color: var(--ritmavo-muted-dark);
+
+  line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   SPORTIVO
+   --------------------------------------------------------- */
+
+.for-who-page .athlete-path-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+
+  margin-bottom: 15px;
+}
+
+
+.for-who-page .athlete-path-grid article {
+  position: relative;
+
+  min-height: 240px;
+
+  padding: 30px;
+
+  border: 1px solid rgba(10, 32, 37, 0.14);
+
+  background: rgba(255, 255, 255, 0.27);
+}
+
+
+.for-who-page .athlete-path-grid article > span {
+  position: absolute;
+
+  top: 29px;
+  right: 29px;
+
+  color: var(--ritmavo-coral);
+
+  font-size: 0.62rem;
+  font-weight: 800;
+}
+
+
+.for-who-page .athlete-path-grid h3 {
+  margin: 13px 0;
+
+  font-size: 1.55rem;
+}
+
+
+.for-who-page .athlete-path-grid article > p:not(.eyebrow) {
+  max-width: 560px;
+
+  margin: 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  line-height: 1.65;
+}
+
+
+.for-who-page .athlete-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 14px;
+}
+
+
+.for-who-page .athlete-tools-grid article {
+  min-height: 285px;
+
+  padding: 27px;
+
+  border: 1px solid rgba(10, 32, 37, 0.14);
+
+  background: rgba(255, 255, 255, 0.3);
+
+  transition:
+    background-color 0.28s ease,
+    color 0.28s ease,
+    border-color 0.28s ease,
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+
+.for-who-page .athlete-tools-grid article:hover {
+  background: var(--ritmavo-bg);
+
+  color: var(--ritmavo-text-light);
+
+  border-color: rgba(18, 184, 179, 0.38);
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, 0.13);
+}
+
+
+.for-who-page .athlete-tools-grid h3 {
+  margin: 12px 0;
+
+  font-size: 1.3rem;
+}
+
+
+.for-who-page .athlete-tools-grid article > p:not(.eyebrow) {
+  min-height: 72px;
+
+  margin: 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  font-size: 0.8rem;
+  line-height: 1.6;
+
+  transition: color 0.28s ease;
+}
+
+
+.for-who-page .athlete-tools-grid article:hover > p:not(.eyebrow) {
+  color: var(--ritmavo-muted-light);
+}
+
+
+.for-who-page .role-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-top: 23px;
+}
+
+
+.for-who-page .role-tags span {
+  padding: 6px 8px;
+
+  border: 1px solid rgba(10, 32, 37, 0.14);
+  border-radius: 999px;
+
+  font-size: 0.61rem;
+  font-weight: 700;
+}
+
+
+.for-who-page .athlete-tools-grid article:hover .role-tags span {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+
+.for-who-page .athlete-statement {
+  margin-top: 34px;
+  padding-top: 23px;
+
+  border-top: 1px solid rgba(10, 32, 37, 0.16);
+}
+
+
+.for-who-page .athlete-statement strong {
+  display: block;
+
+  max-width: 1000px;
+
+  font-family: Manrope, sans-serif;
+  font-size: clamp(1.6rem, 2.5vw, 2.55rem);
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+}
+
+
+/* ---------------------------------------------------------
+   PROFESSIONAL HERO
+   --------------------------------------------------------- */
+
+.for-who-page .professional-hero {
+  display: grid;
+  grid-template-columns: 48% 44%;
+
+  justify-content: space-between;
+  align-items: stretch;
+
+  gap: 50px;
+
+  margin-bottom: 45px;
+}
+
+
+.for-who-page .nutritionist-layout {
+  grid-template-columns: 44% 48%;
+}
+
+
+.for-who-page .professional-image {
+  min-height: 430px;
+
+  overflow: hidden;
+
+  background: var(--ritmavo-bg-soft);
+}
+
+
+.for-who-page .professional-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+
+.for-who-page .professional-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.for-who-page .professional-lead {
+  max-width: 600px;
+
+  margin: 23px 0 0;
+
+  line-height: 1.72;
+}
+
+
+.for-who-page .audience-pt .professional-lead {
+  color: var(--ritmavo-muted-light);
+}
+
+
+.for-who-page .audience-nutritionist .professional-lead {
+  color: var(--ritmavo-muted-dark);
+}
+
+
+.for-who-page .professional-value {
+  margin-top: 31px;
+  padding-top: 19px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.for-who-page .audience-nutritionist .professional-value {
+  border-top-color: rgba(10, 32, 37, 0.14);
+}
+
+
+.for-who-page .professional-value span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: var(--ritmavo-coral);
+
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+
+.for-who-page .professional-value strong {
+  max-width: 500px;
+
+  display: block;
+
+  font-family: Manrope, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+
+/* ---------------------------------------------------------
+   PROFESSIONAL FEATURES
+   --------------------------------------------------------- */
+
+.for-who-page .professional-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 14px;
+}
+
+
+.for-who-page .nutrition-feature-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.for-who-page .professional-feature-grid article {
+  position: relative;
+
+  min-height: 275px;
+
+  padding: 27px;
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+
+  background: var(--ritmavo-bg-soft);
+}
+
+
+.for-who-page .audience-nutritionist .professional-feature-grid article {
+  border-color: rgba(10, 32, 37, 0.14);
+
+  background: rgba(255, 255, 255, 0.27);
+}
+
+
+.for-who-page .professional-feature-grid article > span {
+  position: absolute;
+
+  top: 27px;
+  right: 27px;
+
+  color: var(--ritmavo-coral);
+
+  font-size: 0.62rem;
+  font-weight: 800;
+}
+
+
+.for-who-page .professional-feature-grid h3 {
+  margin: 13px 0;
+
+  font-size: 1.3rem;
+}
+
+
+.for-who-page .professional-feature-grid article > p:not(.eyebrow) {
+  margin: 0;
+
+  color: var(--ritmavo-muted-light);
+
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+
+
+.for-who-page .audience-nutritionist .professional-feature-grid article > p:not(.eyebrow) {
+  color: var(--ritmavo-muted-dark);
+}
+
+
+.for-who-page .professional-feature-highlight {
+  border-color: rgba(255, 111, 97, 0.36) !important;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(255, 111, 97, 0.08),
+      transparent 40%
+    ),
+    var(--ritmavo-bg-soft) !important;
+}
+
+
+.for-who-page .feature-benefit {
+  position: absolute;
+
+  left: 27px;
+  right: 27px;
+  bottom: 25px;
+
+  padding-top: 11px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+
+  color: var(--ritmavo-coral);
+
+  font-size: 0.67rem;
+}
+
+
+/* ---------------------------------------------------------
+   GYM BUSINESS
+   --------------------------------------------------------- */
+
+.for-who-page .gym-business-block {
+  display: grid;
+  grid-template-columns: 26% 43% 23%;
+
+  justify-content: space-between;
+
+  gap: 45px;
+
+  margin-top: 16px;
+  padding: 37px;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  background:
+    radial-gradient(
+      circle at 82% 50%,
+      rgba(18, 184, 179, 0.08),
+      transparent 35%
+    ),
+    var(--ritmavo-bg-soft);
+}
+
+
+.for-who-page .gym-business-block h3 {
+  margin: 9px 0 0;
+
+  font-size: 1.6rem;
+}
+
+
+.for-who-page .gym-business-block > div:nth-child(2) p {
+  margin: 0 0 13px;
+
+  color: var(--ritmavo-muted-light);
+
+  line-height: 1.65;
+}
+
+
+.for-who-page .gym-business-tags {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 7px;
+}
+
+
+.for-who-page .gym-business-tags span {
+  padding: 7px 9px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+
+  font-size: 0.63rem;
+  font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------
+   ECOSYSTEM
+   --------------------------------------------------------- */
+
+.for-who-page .audience-ecosystem {
+  padding: 92px 0;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(18, 184, 179, 0.08),
+      transparent 38%
+    ),
+    var(--ritmavo-bg-soft);
+
+  color: var(--ritmavo-text-light);
+}
+
+
+.for-who-page .ecosystem-heading {
+  max-width: 850px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+
+.for-who-page .ecosystem-heading > p:not(.eyebrow) {
+  max-width: 680px;
+
+  margin: 22px auto 0;
+
+  color: var(--ritmavo-muted-light);
+
+  line-height: 1.7;
+}
+
+
+.for-who-page .ecosystem-network {
+  position: relative;
+
+  min-height: 450px;
+
+  max-width: 920px;
+
+  margin: 0 auto;
+}
+
+
+.for-who-page .ecosystem-network::before,
+.for-who-page .ecosystem-network::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  border: 1px solid rgba(18, 184, 179, 0.17);
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+
+.for-who-page .ecosystem-network::before {
+  width: 540px;
+  height: 330px;
+}
+
+
+.for-who-page .ecosystem-network::after {
+  width: 330px;
+  height: 210px;
+}
+
+
+.for-who-page .ecosystem-node {
+  position: absolute;
+  z-index: 2;
+
+  min-width: 175px;
+
+  padding: 19px;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  background: rgba(6, 25, 30, 0.95);
+
+  text-align: center;
+}
+
+
+.for-who-page .ecosystem-node span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: var(--ritmavo-teal);
+
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+
+.for-who-page .ecosystem-node strong {
+  font-family: Manrope, sans-serif;
+  font-size: 0.87rem;
+}
+
+
+.for-who-page .ecosystem-athlete {
+  left: 50%;
+  top: 50%;
+
+  min-width: 200px;
+
+  padding: 29px;
+
+  transform: translate(-50%, -50%);
+
+  border-color: rgba(255, 111, 97, 0.38);
+}
+
+
+.for-who-page .ecosystem-athlete span {
+  color: var(--ritmavo-coral);
+}
+
+
+.for-who-page .ecosystem-pt {
+  left: 4%;
+  top: 23%;
+}
+
+
+.for-who-page .ecosystem-nutrition {
+  right: 4%;
+  top: 23%;
+}
+
+
+.for-who-page .ecosystem-gym {
+  left: 13%;
+  bottom: 11%;
+}
+
+
+.for-who-page .ecosystem-appointments {
+  right: 13%;
+  bottom: 11%;
+}
+
+
+.for-who-page .ecosystem-message {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  max-width: 1100px;
+
+  margin: 30px auto 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.for-who-page .ecosystem-message p {
+  margin: 0;
+  padding: 20px;
+
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+
+  color: var(--ritmavo-muted-light);
+
+  font-size: 0.75rem;
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+.for-who-page .ecosystem-message p:first-child {
+  border-left: 0;
+}
+
+
+/* ---------------------------------------------------------
+   PRODUCT RECALL
+   --------------------------------------------------------- */
+
+.for-who-page .audience-product {
+  padding: 85px 0;
+
+  background: var(--ritmavo-ice);
+}
+
+
+.for-who-page .audience-product-grid {
+  display: grid;
+  grid-template-columns: 36% 58%;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 60px;
+}
+
+
+.for-who-page .audience-product-copy > p:not(.eyebrow) {
+  margin: 22px 0 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  line-height: 1.7;
+}
+
+
+.for-who-page .audience-product-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin: 26px 0 29px;
+}
+
+
+.for-who-page .audience-product-tags span {
+  padding: 7px 10px;
+
+  border: 1px solid rgba(10, 32, 37, 0.14);
+  border-radius: 999px;
+
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+
+.for-who-page .audience-product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.for-who-page .audience-product-image img {
+  width: min(100%, 780px);
+
+  object-fit: contain;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE FIX
+   --------------------------------------------------------- */
+
+.for-who-page .professional-image img {
+  object-position: center 15%;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE V2
+   --------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+
+  .for-who-page .athlete-tools-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .for-who-page .nutrition-feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .for-who-page .professional-feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .for-who-page .gym-business-block {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .for-who-page .gym-business-tags {
+    grid-column: 1 / -1;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media (max-width: 720px) {
+
+  .for-who-page .audience-role-heading,
+  .for-who-page .professional-hero,
+  .for-who-page .nutritionist-layout,
+  .for-who-page .audience-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .for-who-page .athlete-path-grid,
+  .for-who-page .athlete-tools-grid,
+  .for-who-page .professional-feature-grid,
+  .for-who-page .nutrition-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .for-who-page .professional-image {
+    min-height: 380px;
+  }
+
+  .for-who-page .nutritionist-layout .professional-image {
+    order: -1;
+  }
+
+  .for-who-page .gym-business-block {
+    grid-template-columns: 1fr;
+  }
+
+  .for-who-page .gym-business-tags {
+    grid-column: auto;
+  }
+
+  .for-who-page .ecosystem-network {
+    min-height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+  }
+
+  .for-who-page .ecosystem-network::before,
+  .for-who-page .ecosystem-network::after {
+    display: none;
+  }
+
+  .for-who-page .ecosystem-node {
+    position: static;
+
+    min-width: 0;
+  }
+
+  .for-who-page .ecosystem-athlete {
+    grid-column: 1 / -1;
+
+    transform: none;
+  }
+
+  .for-who-page .ecosystem-message {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .for-who-page .ecosystem-message p:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .for-who-page .ecosystem-message p:nth-child(4) {
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+}
+
+
+@media (max-width: 430px) {
+
+  .for-who-page .professional-image {
+    min-height: 310px;
+  }
+
+  .for-who-page .ecosystem-network,
+  .for-who-page .ecosystem-message {
+    grid-template-columns: 1fr;
+  }
+
+  .for-who-page .ecosystem-athlete {
+    grid-column: auto;
+  }
+
+  .for-who-page .ecosystem-message p {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .for-who-page .ecosystem-message p:first-child {
+    border-top: 0;
+  }
+
+}
