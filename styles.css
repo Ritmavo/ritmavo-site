@@ -694,18 +694,13 @@ h3 {
   border-left: 0;
 }
 
-.discipline-row svg {
-  width: 22px;
-  height: 22px;
+.discipline-row img {
+  width: 24px;
+  height: 24px;
 
-  fill: none;
-  stroke: var(--ritmavo-teal);
+  object-fit: contain;
 
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-
-  flex: 0 0 22px;
+  flex: 0 0 24px;
 }
 
 
