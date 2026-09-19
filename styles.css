@@ -6565,3 +6565,80 @@ button:focus-visible {
   }
 
 }
+
+/* =========================================================
+   SOCIAL LINK — INSTAGRAM
+   ========================================================= */
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: inherit;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.social-link img {
+  width: 18px;
+  height: 18px;
+
+  flex: 0 0 18px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+.social-link:hover {
+  opacity: 0.78;
+
+  transform: translateY(-1px);
+}
+
+
+/* Footer */
+
+.footer-contact .social-link {
+  margin-top: 2px;
+
+  color: var(--ritmavo-text-light);
+}
+
+
+/* Contatti / CTA finale */
+
+.final-cta .social-link {
+  margin-top: 4px;
+
+  color: var(--ritmavo-text-light);
+}
+
+
+/* Mobile */
+
+@media (max-width: 720px) {
+
+  .social-link {
+    font-size: 0.76rem;
+  }
+
+  .social-link img {
+    width: 17px;
+    height: 17px;
+
+    flex-basis: 17px;
+  }
+
+}
