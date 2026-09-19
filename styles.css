@@ -2652,3 +2652,182 @@ button:focus-visible {
   }
 
 }
+
+/* =========================================================
+   PRODUCT PAGE — VOICE WORKOUT
+   ========================================================= */
+
+.product-page .product-voice {
+  position: relative;
+
+  padding: 82px 0;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 18% 38%,
+      rgba(255, 111, 97, 0.08),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 82% 55%,
+      rgba(18, 184, 179, 0.08),
+      transparent 30%
+    ),
+    var(--ritmavo-bg-soft);
+
+  color: var(--ritmavo-text-light);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.product-page .product-voice-grid {
+  display: grid;
+  grid-template-columns: 41% 52%;
+
+  justify-content: space-between;
+
+  gap: 7%;
+}
+
+
+.product-page .product-voice-main h2 {
+  max-width: 540px;
+}
+
+
+.product-page .product-voice-lead {
+  max-width: 500px;
+
+  margin: 25px 0 0;
+
+  color: var(--ritmavo-muted-light);
+
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+
+.product-page .product-voice-status {
+  display: inline-flex;
+
+  margin-top: 28px;
+  padding: 8px 11px;
+
+  border: 1px solid rgba(255, 111, 97, 0.35);
+
+  color: var(--ritmavo-coral);
+
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+
+.product-page .product-voice-steps {
+  position: relative;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.product-page .product-voice-steps article {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+
+  gap: 20px;
+
+  padding: 21px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.product-page .product-voice-steps article > span {
+  color: var(--ritmavo-coral);
+
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+
+.product-page .product-voice-steps article .eyebrow {
+  margin-bottom: 8px;
+}
+
+
+.product-page .product-voice-steps article h3 {
+  margin-bottom: 8px;
+
+  font-size: 1.25rem;
+}
+
+
+.product-page .product-voice-steps article p:last-child {
+  max-width: 540px;
+
+  margin: 0;
+
+  color: var(--ritmavo-muted-light);
+
+  font-size: 0.81rem;
+  line-height: 1.65;
+}
+
+
+.product-page .product-voice-statement {
+  position: relative;
+
+  margin: 28px 0 0;
+  padding-top: 15px;
+
+  color: var(--ritmavo-text-light);
+
+  font-size: 0.72rem;
+  line-height: 1.6;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+
+.product-page .product-voice-statement::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 42px;
+  height: 2px;
+
+  background: var(--ritmavo-coral);
+}
+
+
+@media (max-width: 720px) {
+
+  .product-page .product-voice {
+    padding: 58px 0;
+  }
+
+  .product-page .product-voice-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+}
+
+
+@media (max-width: 430px) {
+
+  .product-page .product-voice-steps article {
+    grid-template-columns: 36px 1fr;
+
+    gap: 12px;
+  }
+
+}
