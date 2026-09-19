@@ -2831,3 +2831,113 @@ button:focus-visible {
   }
 
 }
+
+
+/* =========================================================
+   PRODUCT PAGE — FEATURE CARDS HOVER
+   Tutte chiare di base, petrolio al passaggio del mouse
+   ========================================================= */
+
+.product-page .product-feature-card,
+.product-page .product-feature-card-accent {
+  background: rgba(255, 255, 255, 0.27);
+  color: var(--ritmavo-text-dark);
+
+  border-color: rgba(10, 32, 37, 0.14);
+
+  transition:
+    background-color 0.28s ease,
+    border-color 0.28s ease,
+    color 0.28s ease,
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+
+/* Testi di base */
+
+.product-page .product-feature-card h3,
+.product-page .product-feature-card-accent h3 {
+  color: var(--ritmavo-text-dark);
+
+  transition: color 0.28s ease;
+}
+
+
+.product-page .product-feature-card > p:not(.eyebrow),
+.product-page .product-feature-card-accent > p:not(.eyebrow) {
+  color: var(--ritmavo-muted-dark);
+
+  transition: color 0.28s ease;
+}
+
+
+.product-page .product-feature-card .product-feature-meta,
+.product-page .product-feature-card-accent .product-feature-meta {
+  color: #6a8183;
+
+  border-top-color: rgba(10, 32, 37, 0.13);
+
+  transition:
+    color 0.28s ease,
+    border-color 0.28s ease;
+}
+
+
+/* Hover */
+
+.product-page .product-feature-card:hover,
+.product-page .product-feature-card-accent:hover {
+  background: var(--ritmavo-bg);
+
+  color: var(--ritmavo-text-light);
+
+  border-color: rgba(18, 184, 179, 0.38);
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, 0.14);
+}
+
+
+.product-page .product-feature-card:hover h3,
+.product-page .product-feature-card-accent:hover h3 {
+  color: var(--ritmavo-text-light);
+}
+
+
+.product-page .product-feature-card:hover > p:not(.eyebrow),
+.product-page .product-feature-card-accent:hover > p:not(.eyebrow) {
+  color: var(--ritmavo-muted-light);
+}
+
+
+.product-page .product-feature-card:hover .product-feature-meta,
+.product-page .product-feature-card-accent:hover .product-feature-meta {
+  color: #9cb6b3;
+
+  border-top-color: rgba(255, 255, 255, 0.14);
+}
+
+
+/* Manteniamo gli eyebrow leggibili */
+
+.product-page .product-feature-card:hover .eyebrow.teal,
+.product-page .product-feature-card-accent:hover .eyebrow.teal {
+  color: var(--ritmavo-teal);
+}
+
+
+.product-page .product-feature-card:hover .eyebrow.coral,
+.product-page .product-feature-card-accent:hover .eyebrow.coral {
+  color: var(--ritmavo-coral);
+}
+
+
+/* Numero della card */
+
+.product-page .product-feature-card:hover .product-feature-number,
+.product-page .product-feature-card-accent:hover .product-feature-number {
+  color: var(--ritmavo-coral);
+}
