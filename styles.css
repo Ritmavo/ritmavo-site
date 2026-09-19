@@ -2941,3 +2941,873 @@ button:focus-visible {
 .product-page .product-feature-card-accent:hover .product-feature-number {
   color: var(--ritmavo-coral);
 }
+
+
+/* =========================================================
+   MULTISPORT PAGE
+   Scoped styles — other pages remain untouched
+   ========================================================= */
+
+.multisport-page {
+  background: var(--ritmavo-bg);
+}
+
+
+/* HERO */
+
+.multisport-page .multisport-hero {
+  min-height: 620px;
+
+  padding: 85px 0 72px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 72% 48%,
+      rgba(18, 184, 179, 0.12),
+      transparent 31%
+    ),
+    var(--ritmavo-bg);
+
+  color: var(--ritmavo-text-light);
+}
+
+
+.multisport-page .multisport-hero-grid {
+  display: grid;
+  grid-template-columns: 43% 50%;
+
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 455px;
+}
+
+
+.multisport-page .multisport-hero-copy h1 {
+  color: var(--ritmavo-text-light);
+
+  font-size: clamp(4rem, 5.8vw, 5.7rem);
+}
+
+
+.multisport-page .multisport-hero-copy h1 em {
+  color: var(--ritmavo-teal);
+
+  font-style: normal;
+}
+
+
+.multisport-page .multisport-hero-lead {
+  max-width: 520px;
+
+  margin: 26px 0 31px;
+
+  color: var(--ritmavo-muted-light);
+
+  line-height: 1.7;
+}
+
+
+/* ORBIT */
+
+.multisport-page .multisport-orbit {
+  position: relative;
+
+  min-height: 470px;
+}
+
+
+.multisport-page .multisport-orbit::before,
+.multisport-page .multisport-orbit::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  border: 1px solid rgba(18, 184, 179, 0.19);
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+
+.multisport-page .multisport-orbit::before {
+  width: 340px;
+  height: 340px;
+}
+
+
+.multisport-page .multisport-orbit::after {
+  width: 225px;
+  height: 225px;
+}
+
+
+.multisport-page .multisport-orbit-center {
+  position: absolute;
+  z-index: 4;
+
+  left: 50%;
+  top: 50%;
+
+  width: 125px;
+  height: 125px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(18, 184, 179, 0.36);
+  border-radius: 50%;
+
+  background: var(--ritmavo-bg-soft);
+
+  box-shadow:
+    0 0 55px rgba(18, 184, 179, 0.12);
+}
+
+
+.multisport-page .multisport-orbit-center img {
+  width: 42px;
+  height: 42px;
+
+  object-fit: contain;
+}
+
+
+.multisport-page .multisport-orbit-center span {
+  font-family: Manrope, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+
+.multisport-page .multisport-orbit-item {
+  position: absolute;
+  z-index: 5;
+
+  min-width: 112px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+
+  background: rgba(6, 25, 30, 0.93);
+}
+
+
+.multisport-page .multisport-orbit-item img {
+  width: 30px;
+  height: 30px;
+
+  object-fit: contain;
+}
+
+
+.multisport-page .multisport-orbit-item span {
+  font-size: 0.71rem;
+  font-weight: 700;
+}
+
+
+.multisport-page .sport-1 {
+  top: 2%;
+  left: 39%;
+}
+
+
+.multisport-page .sport-2 {
+  top: 22%;
+  right: 2%;
+}
+
+
+.multisport-page .sport-3 {
+  right: 5%;
+  bottom: 12%;
+}
+
+
+.multisport-page .sport-4 {
+  left: 38%;
+  bottom: 0;
+}
+
+
+.multisport-page .sport-5 {
+  left: 1%;
+  bottom: 13%;
+}
+
+
+.multisport-page .sport-6 {
+  left: 2%;
+  top: 22%;
+}
+
+
+/* PRINCIPLE */
+
+.multisport-page .multisport-principle {
+  padding: 78px 0 66px;
+
+  background: var(--ritmavo-bg-soft);
+
+  color: var(--ritmavo-text-light);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.multisport-page .multisport-principle-grid {
+  display: grid;
+  grid-template-columns: 44% 44%;
+
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+
+.multisport-page .multisport-big-copy {
+  margin: 0;
+
+  color: var(--ritmavo-text-light);
+
+  font-family: Manrope, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+.multisport-page .multisport-muted-copy {
+  margin: 22px 0 0;
+
+  color: var(--ritmavo-muted-light);
+
+  line-height: 1.7;
+}
+
+
+.multisport-page .multisport-flow {
+  display: grid;
+
+  grid-template-columns:
+    1fr auto
+    1fr auto
+    1fr auto
+    1fr auto
+    1fr;
+
+  align-items: center;
+
+  margin-top: 55px;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.multisport-page .multisport-flow div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.multisport-page .multisport-flow b {
+  color: var(--ritmavo-coral);
+
+  font-size: 0.62rem;
+}
+
+
+.multisport-page .multisport-flow span {
+  font-family: Manrope, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+
+.multisport-page .multisport-flow i {
+  padding: 0 12px;
+
+  color: var(--ritmavo-coral);
+
+  font-style: normal;
+}
+
+
+/* DISCIPLINES */
+
+.multisport-page .multisport-disciplines {
+  padding: 80px 0;
+
+  background: var(--ritmavo-ice);
+}
+
+
+.multisport-page .multisport-section-head {
+  display: grid;
+  grid-template-columns: 55% 35%;
+
+  justify-content: space-between;
+  align-items: end;
+
+  gap: 40px;
+
+  margin-bottom: 42px;
+}
+
+
+.multisport-page .multisport-section-head > p {
+  margin: 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  line-height: 1.65;
+}
+
+
+.multisport-page .multisport-discipline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 14px;
+}
+
+
+.multisport-page .multisport-discipline-card {
+  position: relative;
+
+  min-height: 330px;
+
+  padding: 28px;
+
+  border: 1px solid rgba(10, 32, 37, 0.14);
+
+  background: rgba(255, 255, 255, 0.28);
+
+  transition:
+    background-color 0.28s ease,
+    color 0.28s ease,
+    border-color 0.28s ease,
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+
+.multisport-page .multisport-discipline-card-highlight {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+
+.multisport-page .multisport-discipline-card:hover {
+  background: var(--ritmavo-bg);
+
+  color: var(--ritmavo-text-light);
+
+  border-color: rgba(18, 184, 179, 0.38);
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, 0.14);
+}
+
+
+.multisport-page .multisport-discipline-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 24px;
+
+  border: 1px solid rgba(18, 184, 179, 0.28);
+  border-radius: 14px;
+
+  background: rgba(18, 184, 179, 0.05);
+}
+
+
+.multisport-page .multisport-discipline-icon img {
+  width: 30px;
+  height: 30px;
+
+  object-fit: contain;
+}
+
+
+.multisport-page .multisport-discipline-number {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+
+  color: var(--ritmavo-coral);
+
+  font-size: 0.62rem;
+  font-weight: 800;
+}
+
+
+.multisport-page .multisport-discipline-card h3 {
+  margin: 10px 0 14px;
+
+  font-size: 1.45rem;
+
+  transition: color 0.28s ease;
+}
+
+
+.multisport-page .multisport-discipline-card > p:not(.eyebrow) {
+  margin: 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  font-size: 0.84rem;
+  line-height: 1.65;
+
+  transition: color 0.28s ease;
+}
+
+
+.multisport-page .multisport-discipline-card:hover > p:not(.eyebrow) {
+  color: var(--ritmavo-muted-light);
+}
+
+
+.multisport-page .multisport-discipline-meta {
+  position: absolute;
+
+  left: 28px;
+  right: 28px;
+  bottom: 26px;
+
+  padding-top: 12px;
+
+  border-top: 1px solid rgba(10, 32, 37, 0.13);
+
+  color: #698184;
+
+  font-size: 0.66rem;
+
+  transition:
+    color 0.28s ease,
+    border-color 0.28s ease;
+}
+
+
+.multisport-page .multisport-discipline-card:hover .multisport-discipline-meta {
+  color: #9cb6b3;
+
+  border-top-color: rgba(255, 255, 255, 0.14);
+}
+
+
+/* PLAN */
+
+.multisport-page .multisport-plan {
+  padding: 82px 0;
+
+  background: var(--ritmavo-paper);
+}
+
+
+.multisport-page .multisport-plan-grid {
+  display: grid;
+  grid-template-columns: 36% 58%;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 60px;
+}
+
+
+.multisport-page .multisport-plan-copy > p:not(.eyebrow) {
+  margin: 20px 0 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  line-height: 1.7;
+}
+
+
+.multisport-page .multisport-plan-copy .button {
+  margin-top: 28px;
+}
+
+
+.multisport-page .multisport-plan-device {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.multisport-page .multisport-plan-device img {
+  width: min(100%, 760px);
+
+  object-fit: contain;
+}
+
+
+/* HYBRID */
+
+.multisport-page .multisport-hybrid {
+  padding: 82px 0;
+
+  background: var(--ritmavo-bg);
+
+  color: var(--ritmavo-text-light);
+}
+
+
+.multisport-page .multisport-hybrid-grid {
+  display: grid;
+  grid-template-columns: 40% 52%;
+
+  justify-content: space-between;
+
+  gap: 70px;
+}
+
+
+.multisport-page .multisport-hybrid-grid > div:first-child > p:not(.eyebrow) {
+  margin: 23px 0 0;
+
+  color: var(--ritmavo-muted-light);
+
+  line-height: 1.7;
+}
+
+
+.multisport-page .multisport-hybrid-steps {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.multisport-page .multisport-hybrid-steps > div {
+  display: grid;
+  grid-template-columns: 45px 145px 1fr;
+
+  gap: 15px;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.multisport-page .multisport-hybrid-steps span {
+  color: var(--ritmavo-coral);
+
+  font-size: 0.64rem;
+  font-weight: 800;
+}
+
+
+.multisport-page .multisport-hybrid-steps strong {
+  font-family: Manrope, sans-serif;
+}
+
+
+.multisport-page .multisport-hybrid-steps p {
+  margin: 0;
+
+  color: var(--ritmavo-muted-light);
+
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+
+/* RECOVERY */
+
+.multisport-page .multisport-recovery {
+  padding: 74px 0;
+
+  background: var(--ritmavo-bg-soft);
+
+  color: var(--ritmavo-text-light);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.multisport-page .multisport-recovery-grid {
+  display: grid;
+  grid-template-columns: 20% 65%;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+
+.multisport-page .multisport-recovery-icon {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(18, 184, 179, 0.3);
+  border-radius: 32px;
+
+  background: rgba(18, 184, 179, 0.04);
+}
+
+
+.multisport-page .multisport-recovery-icon img {
+  width: 75px;
+  height: 75px;
+
+  object-fit: contain;
+}
+
+
+.multisport-page .multisport-recovery-grid > div:last-child > p:not(.eyebrow) {
+  max-width: 720px;
+
+  margin: 22px 0 0;
+
+  color: var(--ritmavo-muted-light);
+
+  line-height: 1.7;
+}
+
+
+/* CONNECTION */
+
+.multisport-page .multisport-connection {
+  padding: 76px 0;
+
+  background: var(--ritmavo-ice);
+}
+
+
+.multisport-page .multisport-connection-grid {
+  display: grid;
+  grid-template-columns: 45% 45%;
+
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+
+.multisport-page .multisport-connection-grid > div:last-child > p {
+  margin: 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  line-height: 1.7;
+}
+
+
+.multisport-page .multisport-connection-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 27px;
+}
+
+
+.multisport-page .multisport-connection-list span {
+  padding: 8px 11px;
+
+  border: 1px solid rgba(10, 32, 37, 0.15);
+  border-radius: 999px;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+
+/* STATUS */
+
+.multisport-page .multisport-status {
+  padding: 74px 0;
+
+  background: var(--ritmavo-paper);
+}
+
+
+.multisport-page .multisport-status-grid {
+  display: grid;
+  grid-template-columns: 46% 43%;
+
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+
+.multisport-page .multisport-status-grid > div:last-child > p {
+  margin: 0;
+
+  color: var(--ritmavo-muted-dark);
+
+  line-height: 1.7;
+}
+
+
+.multisport-page .multisport-status dl {
+  display: grid;
+  grid-template-columns: 38% 62%;
+
+  margin: 30px 0 0;
+
+  border-top: 1px solid var(--line-light);
+
+  font-size: 0.72rem;
+}
+
+
+.multisport-page .multisport-status dt,
+.multisport-page .multisport-status dd {
+  margin: 0;
+
+  padding: 10px 0;
+
+  border-bottom: 1px solid var(--line-light);
+}
+
+
+.multisport-page .multisport-status dt {
+  font-weight: 800;
+}
+
+
+.multisport-page .multisport-status dd {
+  color: #415c5e;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .multisport-page .multisport-discipline-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .multisport-page .multisport-orbit {
+    transform: scale(0.9);
+  }
+
+}
+
+
+@media (max-width: 720px) {
+
+  .multisport-page .multisport-hero {
+    padding: 55px 0 45px;
+  }
+
+  .multisport-page .multisport-hero-grid,
+  .multisport-page .multisport-principle-grid,
+  .multisport-page .multisport-plan-grid,
+  .multisport-page .multisport-hybrid-grid,
+  .multisport-page .multisport-recovery-grid,
+  .multisport-page .multisport-connection-grid,
+  .multisport-page .multisport-status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .multisport-page .multisport-orbit {
+    min-height: 430px;
+
+    margin-top: 35px;
+
+    transform: scale(0.82);
+  }
+
+  .multisport-page .multisport-flow {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+  }
+
+  .multisport-page .multisport-flow i {
+    display: none;
+  }
+
+  .multisport-page .multisport-flow div {
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  }
+
+  .multisport-page .multisport-section-head {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .multisport-page .multisport-discipline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .multisport-page .multisport-hybrid-steps > div {
+    grid-template-columns: 38px 1fr;
+  }
+
+  .multisport-page .multisport-hybrid-steps p {
+    grid-column: 2;
+  }
+
+  .multisport-page .multisport-recovery-icon {
+    width: 110px;
+    height: 110px;
+  }
+
+  .multisport-page .multisport-recovery-icon img {
+    width: 55px;
+    height: 55px;
+  }
+
+}
+
+
+@media (max-width: 430px) {
+
+  .multisport-page .multisport-hero-copy h1 {
+    font-size: 3rem;
+  }
+
+  .multisport-page .multisport-orbit {
+    margin-left: -40px;
+    margin-right: -40px;
+
+    transform: scale(0.7);
+  }
+
+  .multisport-page .multisport-status dl {
+    grid-template-columns: 1fr;
+  }
+
+}
